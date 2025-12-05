@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Soundboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Simple Soundboard</h1>
+
+    <div class="controls">
+      <label for="volume">Volume</label>
+      <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+
+      <button id="stopAll">Stop All</button>
+    </div>
+
+    <div class="grid" id="sound-grid" aria-label="Sound buttons">
+      <button class="sound-btn" data-sound="dog" data-key="1">Dog</button>
+      <button class="sound-btn" data-sound="clap" data-key="2">Clap</button>
+      <button class="sound-btn" data-sound="pop" data-key="3">Pop</button>
+      <button class="sound-btn" data-sound="laugh" data-key="4">Laugh</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
